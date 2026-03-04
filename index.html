@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>42 Locations – Premium Real Estate Templates</title>
+  <meta name="description"
+    content="42 Locations: Choose from 3 premium real estate website templates – Corporate, Eco, and Luxury – with live preview." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-template="template1">
+
+  <!-- ═══════════════ TEMPLATE SWITCHER ═══════════════ -->
+  <div class="template-switcher" id="templateSwitcher">
+    <div class="switcher-inner">
+      <span class="switcher-label">🎨 Experience</span>
+      <div class="switcher-buttons">
+        <button class="switcher-btn active" data-theme="template1">
+          <span class="switcher-dot corporate"></span>Corporate
+        </button>
+        <button class="switcher-btn" data-theme="template2">
+          <span class="switcher-dot eco"></span>Eco
+        </button>
+        <button class="switcher-btn" data-theme="template3">
+          <span class="switcher-dot luxury"></span>Luxury
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ TOP BAR ═══════════════ -->
+  <div class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="topbar-item">📧 info@42locations.com</span>
+        <span class="topbar-divider">|</span>
+        <span class="topbar-item">📞 +91 88258 02060</span>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-item">Mon–Sat: 9 AM – 7 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" id="navLogo">
+        <img src="assets/logo_corporate.png" alt="42 Locations Logo" id="logoImg" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#properties" class="nav-link">Properties</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-cta" id="navCta">
+        <span class="cta-text">Get In Touch</span>
+        <span class="cta-arrow">→</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO / BANNER ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <!-- Animated particles for luxury theme -->
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container hero-content">
+      <div class="hero-text-group">
+        <p class="hero-subtitle" id="heroSubtitle">Premier Real Estate Services</p>
+        <h1 class="hero-title" id="heroTitle">Find Exclusive Properties<br />in Chennai, Tamil Nadu</h1>
+        <p class="hero-desc" id="heroDesc">Discover premium residential &amp; commercial properties with expert guidance
+          from industry leaders.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="heroPrimary">
+            <span>Explore Properties</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+          <button class="btn btn-outline" id="heroSecondary">
+            <span>Connect With Experts</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Properties</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Localities</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-image-wrap">
+        <img src="assets/property_1.png" alt="About us property" class="about-image" />
+        <div class="about-badge" id="aboutBadge">
+          <span class="badge-number">15</span>
+          <span class="badge-text">Years of<br />Excellence</span>
+        </div>
+        <!-- Decorative floating shapes -->
+        <div class="about-deco about-deco-1"></div>
+        <div class="about-deco about-deco-2"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag" id="aboutTag">About Us</p>
+        <h2 class="section-title" id="aboutTitle">Your Trusted Partner in Real Estate</h2>
+        <p class="about-desc" id="aboutDesc">We are a full-service real estate company specializing in the Chennai
+          market. Our team of experienced professionals provides end-to-end solutions including property buying,
+          selling, leasing, property management, and construction services.</p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <span class="feature-icon">🏠</span>
+            </div>
+            <div>
+              <strong>Residential</strong><br />Premium homes &amp; apartments
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <span class="feature-icon">🏢</span>
+            </div>
+            <div>
+              <strong>Commercial</strong><br />Office &amp; retail spaces
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <span class="feature-icon">🔑</span>
+            </div>
+            <div>
+              <strong>Rental</strong><br />Hassle-free leasing
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-wrap">
+              <span class="feature-icon">📐</span>
+            </div>
+            <div>
+              <strong>Interior</strong><br />Design &amp; renovation
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROPERTIES ═══════════════ -->
+  <section class="properties" id="properties">
+    <div class="container">
+      <p class="section-tag center" id="propTag">Featured Properties</p>
+      <h2 class="section-title center" id="propTitle">Recommended For You</h2>
+      <div class="property-grid">
+
+        <div class="property-card" data-tilt>
+          <div class="property-img-wrap">
+            <img src="assets/property_1.png" alt="Luxury 3BHK Apartment" />
+            <span class="property-badge sale">For Sale</span>
+            <div class="property-img-overlay">
+              <button class="btn btn-sm btn-glass">Quick View</button>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-name">Luxury 3BHK Apartment</h3>
+            <p class="property-loc">
+              <svg class="loc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Anna Nagar, Chennai
+            </p>
+            <div class="property-meta">
+              <span><strong>3</strong> Beds</span>
+              <span><strong>2</strong> Baths</span>
+              <span><strong>1,650</strong> sq.ft</span>
+            </div>
+            <div class="property-bottom">
+              <span class="property-price">₹1.25 Cr</span>
+              <button class="btn btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card" data-tilt>
+          <div class="property-img-wrap">
+            <img src="assets/property_2.png" alt="Independent Villa" />
+            <span class="property-badge sale">For Sale</span>
+            <div class="property-img-overlay">
+              <button class="btn btn-sm btn-glass">Quick View</button>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-name">Modern Independent Villa</h3>
+            <p class="property-loc">
+              <svg class="loc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              ECR, Chennai
+            </p>
+            <div class="property-meta">
+              <span><strong>4</strong> Beds</span>
+              <span><strong>3</strong> Baths</span>
+              <span><strong>2,800</strong> sq.ft</span>
+            </div>
+            <div class="property-bottom">
+              <span class="property-price">₹3.50 Cr</span>
+              <button class="btn btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card" data-tilt>
+          <div class="property-img-wrap">
+            <img src="assets/property_3.png" alt="Waterfront Apartment" />
+            <span class="property-badge rent">For Rent</span>
+            <div class="property-img-overlay">
+              <button class="btn btn-sm btn-glass">Quick View</button>
+            </div>
+          </div>
+          <div class="property-info">
+            <h3 class="property-name">Waterfront Premium Flat</h3>
+            <p class="property-loc">
+              <svg class="loc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              OMR, Chennai
+            </p>
+            <div class="property-meta">
+              <span><strong>2</strong> Beds</span>
+              <span><strong>2</strong> Baths</span>
+              <span><strong>1,200</strong> sq.ft</span>
+            </div>
+            <div class="property-bottom">
+              <span class="property-price">₹45,000/mo</span>
+              <button class="btn btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-tag center" id="svcTag">Our Services</p>
+      <h2 class="section-title center" id="svcTitle">What We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🏠</span></div>
+          <h3>Buy &amp; Sell</h3>
+          <p>Expert assistance for buying and selling residential &amp; commercial properties across Chennai.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🔑</span></div>
+          <h3>Rent &amp; Lease</h3>
+          <p>Find the perfect rental property or list yours with our comprehensive leasing services.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🏗️</span></div>
+          <h3>Construction</h3>
+          <p>Quality construction material supply and project management for your dream home.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🌏</span></div>
+          <h3>NRI Services</h3>
+          <p>Complete property management solutions for Non-Resident Indians with peace of mind.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🏦</span></div>
+          <h3>Home Loans</h3>
+          <p>Partnered with leading banks to offer competitive home loan rates and quick approvals.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🎨</span></div>
+          <h3>Interior Design</h3>
+          <p>Transform your space with our professional interior design and renovation services.</p>
+          <a href="#" class="service-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <p class="section-tag center">What Clients Say</p>
+      <h2 class="section-title center">Trusted by Thousands</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"42 Locations helped us find our dream home in Anna Nagar. The entire process was
+            seamless and professional. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <strong>Rajesh Kumar</strong>
+              <span>Home Buyer, Anna Nagar</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Best real estate service in Chennai. They managed our property investment
+            portfolio with exceptional expertise and transparency."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PS</div>
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>Investor, ECR</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As an NRI, managing properties in Chennai was a headache until I found 42
+            Locations. They handle everything flawlessly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AV</div>
+            <div>
+              <strong>Arun Venkat</strong>
+              <span>NRI Client, USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ INQUIRY / CTA ═══════════════ -->
+  <section class="inquiry" id="inquiry">
+    <div class="container inquiry-grid">
+      <div class="inquiry-text">
+        <h2 class="inquiry-title" id="inquiryTitle">Ready to Find Your Dream Property?</h2>
+        <p class="inquiry-desc">Fill in the form and our experts will reach out to you within 24 hours. Let us help you
+          make the best investment of your life.</p>
+        <div class="inquiry-trust">
+          <div class="trust-item"><span class="trust-icon">✓</span> Free Consultation</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> Zero Brokerage</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> Expert Guidance</div>
+        </div>
+      </div>
+      <form class="inquiry-form" id="inquiryForm"
+        onsubmit="event.preventDefault(); alert('Thank you! We will reach out shortly.');">
+        <h3>Get In Touch</h3>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <select>
+              <option value="">Property Type</option>
+              <option>Apartment</option>
+              <option>Villa</option>
+              <option>Commercial</option>
+              <option>Plot</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select>
+              <option value="">Location</option>
+              <option>Anna Nagar</option>
+              <option>ECR</option>
+              <option>OMR</option>
+              <option>T. Nagar</option>
+              <option>Adyar</option>
+              <option>Velachery</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span>Submit Inquiry</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PARTNERS ═══════════════ -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <p class="section-tag center">Our Trusted Partners</p>
+      <div class="partners-marquee">
+        <div class="marquee-track">
+          <span class="partner-name">Casagrand</span>
+          <span class="partner-name">VGN</span>
+          <span class="partner-name">Urbanrise</span>
+          <span class="partner-name">Mahindra Lifespaces</span>
+          <span class="partner-name">Prestige Group</span>
+          <span class="partner-name">L&amp;T Realty</span>
+          <span class="partner-name">Casagrand</span>
+          <span class="partner-name">VGN</span>
+          <span class="partner-name">Urbanrise</span>
+          <span class="partner-name">Mahindra Lifespaces</span>
+          <span class="partner-name">Prestige Group</span>
+          <span class="partner-name">L&amp;T Realty</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="assets/logo_corporate.png" alt="42 Locations" id="footerLogo" class="footer-logo" />
+        <p>Your one-stop solution for all real estate needs in Chennai, Tamil Nadu. We connect property seekers with
+          their dream homes.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Website">🌐</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Buy &amp; Sell</a></li>
+          <li><a href="#">Rent &amp; Lease</a></li>
+          <li><a href="#">Property Management</a></li>
+          <li><a href="#">NRI Services</a></li>
+          <li><a href="#">Home Loans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li>📍 Chennai, Tamil Nadu, India</li>
+          <li>📞 +91 88258 02060</li>
+          <li>📧 info@42locations.com</li>
+          <li>🕐 Mon – Sat: 9 AM – 7 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 <span id="footerBrand">42 Locations</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ WHATSAPP FLOAT ═══════════════ -->
+  <a href="https://wa.me/918825802060" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
