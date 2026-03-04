@@ -11,7 +11,7 @@
   --shadow-xl: 0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* ═══════════════ TEMPLATE 1: CORPORATE — Sharp, Grid-Dense, Bold ═══════════════ */
+/* ═══════════════ TEMPLATE 1: CORPORATE — Gradient, Stylish, Bold ═══════════════ */
 body[data-template="template1"] {
   --primary: #0f2b46;
   --primary-light: #1a4a7a;
@@ -25,8 +25,11 @@ body[data-template="template1"] {
   --font-main: 'DM Sans', 'Inter', sans-serif;
   --font-heading: 'Inter', sans-serif;
   --nav-bg: #ffffff;
-  --footer-bg: #0b1d30;
-  --hero-overlay: linear-gradient(135deg, rgba(15, 43, 70, 0.92) 0%, rgba(15, 43, 70, 0.60) 50%, rgba(15, 43, 70, 0.30) 100%);
+  --footer-bg: linear-gradient(135deg, #0b1d30 0%, #142e4a 50%, #0a1628 100%);
+  --hero-overlay: linear-gradient(135deg, rgba(10, 25, 50, 0.95) 0%, rgba(15, 43, 70, 0.70) 40%, rgba(26, 74, 122, 0.40) 100%);
+  --gradient-primary: linear-gradient(135deg, #0f2b46 0%, #1a4a7a 50%, #2563eb 100%);
+  --gradient-secondary: linear-gradient(135deg, #d4a745 0%, #f0d078 50%, #e8b84b 100%);
+  --gradient-accent: linear-gradient(135deg, #0f2b46 0%, #1e3a5f 40%, #d4a745 100%);
   --radius: 6px;
   --radius-lg: 10px;
   --card-border: 1px solid #e2e8f0;
@@ -1820,6 +1823,182 @@ section.animate-in,
 
 .whatsapp-float:hover {
   transform: scale(1.1);
+}
+
+/* ═══════════════ CORPORATE GRADIENT OVERRIDES ═══════════════ */
+body[data-template="template1"] .topbar {
+  background: linear-gradient(90deg, #0a1e36 0%, #0f2b46 40%, #1a4a7a 100%);
+}
+
+body[data-template="template1"] .nav-cta {
+  background: linear-gradient(135deg, #0f2b46 0%, #1a4a7a 50%, #2563eb 100%);
+  box-shadow: 0 4px 15px rgba(15, 43, 70, 0.3);
+}
+
+body[data-template="template1"] .nav-cta:hover {
+  box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+}
+
+body[data-template="template1"] .btn-primary {
+  background: linear-gradient(135deg, #0f2b46 0%, #1a4a7a 50%, #2563eb 100%);
+  box-shadow: 0 4px 20px rgba(15, 43, 70, 0.25);
+}
+
+body[data-template="template1"] .btn-primary:hover {
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.35);
+}
+
+body[data-template="template1"] .btn-sm {
+  background: linear-gradient(135deg, #0f2b46, #1a4a7a);
+}
+
+body[data-template="template1"] .hero-subtitle {
+  background: linear-gradient(90deg, #d4a745, #f0d078, #e8b84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: none;
+}
+
+body[data-template="template1"] .stat-number,
+body[data-template="template1"] .stat-suffix {
+  background: linear-gradient(135deg, #d4a745, #f0d078);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template1"] .service-card::before {
+  background: linear-gradient(90deg, #d4a745, #f0d078, #e8b84b);
+}
+
+body[data-template="template1"] .about-badge {
+  background: linear-gradient(135deg, #0f2b46, #1a4a7a, #2563eb);
+}
+
+body[data-template="template1"] .inquiry {
+  background: linear-gradient(135deg, #0a1e36 0%, #0f2b46 30%, #1a4a7a 70%, #162d50 100%);
+}
+
+body[data-template="template1"] .footer {
+  background: linear-gradient(135deg, #0b1d30 0%, #142e4a 50%, #0a1628 100%);
+}
+
+body[data-template="template1"] .property-price {
+  background: linear-gradient(135deg, #0f2b46, #2563eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template1"] .section-tag {
+  background: linear-gradient(90deg, #d4a745, #e8b84b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template1"] .section-tag::before {
+  background: linear-gradient(90deg, #d4a745, #f0d078);
+}
+
+body[data-template="template1"] .switcher-btn.active {
+  background: linear-gradient(135deg, #0f2b46, #1a4a7a);
+}
+
+body[data-template="template1"] .author-avatar {
+  background: linear-gradient(135deg, #0f2b46, #2563eb);
+}
+
+body[data-template="template1"] .feature-icon-wrap {
+  background: linear-gradient(135deg, #e8edf3, #dce3ed);
+  border: 1px solid #d0d9e6;
+}
+
+body[data-template="template1"] .service-icon-wrap {
+  background: linear-gradient(135deg, #e8edf3, #dce3ed);
+}
+
+/* ═══════════════ BRAND HIGHLIGHT — "42 Locations" ═══════════════ */
+.brand-highlight {
+  font-weight: 900;
+  position: relative;
+  display: inline;
+}
+
+body[data-template="template1"] .brand-highlight {
+  background: linear-gradient(135deg, #0f2b46 0%, #1a4a7a 40%, #2563eb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template2"] .brand-highlight {
+  background: linear-gradient(135deg, #2d5a27 0%, #3a7d44 50%, #5ea469 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template3"] .brand-highlight {
+  background: linear-gradient(135deg, #c9a84c 0%, #e0c67a 50%, #c9a84c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Brand highlight in hero (white context) */
+.hero .brand-highlight {
+  font-weight: 900;
+}
+
+body[data-template="template1"] .hero .brand-highlight {
+  background: linear-gradient(135deg, #d4a745, #f0d078, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template2"] .hero .brand-highlight {
+  background: linear-gradient(135deg, #90c67a, #e5c88a, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+body[data-template="template3"] .hero .brand-highlight {
+  background: linear-gradient(135deg, #c9a84c, #e0c67a, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Brand highlight in footer (dark context) */
+.footer .brand-highlight {
+  background: linear-gradient(135deg, #d4a745, #f0d078) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Brand highlight in inquiry (dark context) */
+.inquiry .brand-highlight {
+  background: linear-gradient(135deg, #d4a745, #f0d078, #fff) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 /* ═══════════════ RESPONSIVE ═══════════════ */

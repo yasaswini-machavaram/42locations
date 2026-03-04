@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroBg: 'assets/hero_42locations.png',
       subtitle: 'Premier Real Estate Services',
       title: 'Find Exclusive Properties<br/>in Chennai, Tamil Nadu',
-      desc: 'Discover premium residential and commercial properties with expert guidance from 42 Locations – your trusted partner in Chennai real estate.'
+      desc: 'Discover premium residential and commercial properties with expert guidance from <span class="brand-highlight">42 Locations</span> – your trusted partner in Chennai real estate.'
     },
     template2: {
       name: '42 Locations',
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroBg: 'assets/hero_greennest.png',
       subtitle: 'Sustainable Urban Living',
       title: 'Your Future Home,<br/>Nature\'s Best Choice',
-      desc: 'Experience eco-friendly living with 42 Locations. We specialize in green communities and sustainable residential projects across Chennai.'
+      desc: 'Experience eco-friendly living with <span class="brand-highlight">42 Locations</span>. We specialize in green communities and sustainable residential projects across Chennai.'
     },
     template3: {
       name: '42 Locations',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroBg: 'assets/hero_urbanedge.png',
       subtitle: 'Luxury Living Reimagined',
       title: 'Elegance Redefined<br/>in Every Detail',
-      desc: '42 Locations presents an exclusive collection of high-end penthouses and luxury estates for the discerning modern investor.'
+      desc: '<span class="brand-highlight">42 Locations</span> presents an exclusive collection of high-end penthouses and luxury estates for the discerning modern investor.'
     }
   };
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update hero text
     document.getElementById('heroSubtitle').textContent = config.subtitle;
     document.getElementById('heroTitle').innerHTML = config.title;
-    document.getElementById('heroDesc').textContent = config.desc;
+    document.getElementById('heroDesc').innerHTML = config.desc;
 
     // Update footer brand
     if (footerBrand) footerBrand.textContent = config.name;
